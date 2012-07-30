@@ -62,5 +62,4 @@ Prison::getStatus = () ->
   this.lockedDown
 
 # Expose Prison
-root = exports ? this
-root.Prison = new Prison();
+this.Prison = new Prison()
