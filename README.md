@@ -19,4 +19,4 @@ Prison should work cross browser. Please report any issues with compatibility [t
 
 Prison is written in coffeescript. All code is compiled before checkin and can be found in the ./lib directory. If you wish to manually build your own version, simply run from the project directory.
 
-    coffee --compile --output lib/ src/
+    ./build.sh
