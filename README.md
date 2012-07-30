@@ -1,6 +1,6 @@
 #Prison
 
-Prevent users from scrolling
+Prevent users from scrolling. It's also pretty lightweight at only about 500b
 
 ### Usage:
 
