@@ -2,16 +2,6 @@
   Prison.js
   Copyright(c) 2012 Troy Whiteley <troy@somanyscientists.com>
   Released under the MIT License.
-
-  Allows you to lock your users down so they can't scroll.
-  Very useful for modals or any other interactive module
-  that has it's own built in scrolling.
-
-  Patches may be submitted in either coffeescript or javascript.
-  If your patch is in javascript, it will be converted for you.
-
-  Please post any issues to:
-    https://github.com/dawnerd/Prison/issues
 ###
 
 Prison = () ->
@@ -21,7 +11,7 @@ Prison = () ->
 
 Prison::_scroll = (event) ->
   event.preventDefault()
-  
+
   return
 
 Prison::_keydown = (event) ->
