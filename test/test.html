@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Prison tests</title>
+</head>
+<body>
+
+
+  <script src="../lib/prison.js"></script>
+  <script>
+    //populate the dom with useless elements
+    
+    for(var i = 100; i--;) {
+      document.body.innerHTML += '<p>This wont scroll</p>';
+    }
+
+    Prison.enable();
+  </script>
+</body>
+</html>
