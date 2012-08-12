@@ -41,6 +41,12 @@ Prison::enable = () ->
   window.onmousewheel = document.onmousewheel = this._scroll
   document.onkeydown = this._keydown
 
+  links = document.getElementsByTagName 'a'
+
+  for link in links
+    link.setAttribute 'data-original-tabIndex', link.getAttribute 'tabIndex'
+    link.setAttribute 'tabIndex', -1
+
   return this.lockedDown
 
 Prison::disable = () ->
@@ -55,6 +61,11 @@ Prison::disable = () ->
 
   window.onmousewheel = document.onmousewheel = this.originalScrollEvent
   document.onkeydown = this.originalKeyEvent
+
+  links = document.getElementsByTagName 'a'
+
+  for link in links
+    link.setAttribute 'tabIndex', link.getAttribute 'tabIndex'
 
   return this.lockedDown
 
